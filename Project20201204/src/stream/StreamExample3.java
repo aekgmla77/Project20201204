@@ -17,6 +17,7 @@ public class StreamExample3 {
 //		.filter( s -> s.startsWith("s"))
 				.forEach(s -> System.out.println(s)); // start with 문자열 뭐가 처음으로 오는지 설정
 
+		System.out.println();
 		strList.stream().map(new Function<String, String>() { // map은 return 되는 타입만 정하면 string을 만들어줌.
 
 			@Override

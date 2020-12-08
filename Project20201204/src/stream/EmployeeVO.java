@@ -1,6 +1,6 @@
 package stream;
 
-public class EmployeeVO {
+public class EmployeeVO implements Comparable<EmployeeVO>{
 	private int employeeId;
 	private String firstName;
 	private String lastName;
@@ -103,5 +103,14 @@ public class EmployeeVO {
 	public void showEmpInfo() {
 		System.out.println("사원번호: " + employeeId + ", firstName: " + firstName + ", lastName: " + lastName + ", email: "
 				+ email + ", 급여: " + salary + "부서: " + departmentId);
+	}
+
+//	@Override
+//	public int compareTo(EmployeeVO o) {
+//		return this.salary - o.salary;
+//	}
+	@Override
+	public int compareTo(EmployeeVO o) {
+		return this.firstName.compareTo(o.firstName);
 	}
 }

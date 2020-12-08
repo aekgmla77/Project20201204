@@ -29,7 +29,7 @@ public class Student implements Comparable<Student> {
 //			return -1;
 //		else
 //			return 1;
-		//오름차순 : 음수 , 같다 : 0, 내림차순 : 양수 숫자에 따라 오름차순, 내림차순 달라짐
+		//오름차순 : 음수 , 같다 : 0, 내림차순 : 양수.  숫자에 따라 오름차순, 내림차순 달라짐
 		return o.score - this.score  ;
 
 	}

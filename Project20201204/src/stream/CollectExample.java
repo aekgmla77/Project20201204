@@ -30,7 +30,7 @@ public class CollectExample {
 						Collectors.toMap(
 						(t) -> t.getName(), 
 						(t) -> t.getScore()
-				//
+				//map은 return 값이 있고, foreach는 없다.
 				)
 			);
 		
